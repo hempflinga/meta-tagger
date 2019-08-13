@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Email Creator  |  Ready to Roll</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="shortcut icon" type="image/x-icon" href="https://www.witopia.com/wp-content/uploads/flat-email-icon.png" alt="Favicon">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Barrio|Lobster|Press+Start+2P|Rammetto+One&display=swap" rel="stylesheet">
+		<style>
+			label {
+				text-transform: capitalize;
+			}
+		</style>
+</head>
+	<body>
+	<canvas id="myCanvas" style="display: none;"></canvas>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container">
+				<a class="navbar-brand" href="index.html">Email Creator</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Home</a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="ready-to-roll.html">Ready to Roll<span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="all-makes.html">All Makes</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="info.html">General Info</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-9" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #ebebeb;" id="emailContent">
+					<div class="col-6" style="margin: 0 auto">
+
+							<textarea rows="50" class="form-control" id="tagPool"></textarea>
+					</div>
+				</div>
+				<div class="col-3 pt-3 scroll-col">
+
+
+	<div class="form-group">
+		<label for="r2rTitle mt-5">Title</label>
+		<input id="r2rTitle" class="form-control" name="title">
+	</div>
+	
+	<div class="form-group">
+		<label for="r2rcanonical mt-5">canonical</label>
+		<input id="r2rcanonical" class="form-control" name="canonical">
+	</div>
+	
+	<div class="form-group">
+		<label for="metadescription">description</label>
+		<input id="metadescription"  name="description"  class="form-control">
+	</div>
+	<div class="form-group">
+		<label for="metaviewport">viewport</label>
+		<input id="metaviewport"  name="viewport"  class="form-control">
+	</div>
+	<div class="form-group">
+		<label for="metakeywords">keywords</label>
+		<input id="metakeywords"  name="keywords"  class="form-control">
+	</div>
+	<div class="form-group">
+		<label for="metarobots">robots</label>
+		<input id="metarobots"  name="robots"  class="form-control">
+	</div>
+	<div class="form-group">
+		<label for="metarevisit-after">revisit-after</label>
+		<input id="metarevisit-after"  name="revisit-after"  class="form-control">
+	</div>
+	<div class="form-group">
+		<label for="metacopyright">copyright</label>
+		<input id="metacopyright"  name="copyright"  class="form-control">
+	</div>
+	<div class="form-group">
+		<label for="metagooglebot">googlebot</label>
+		<input id="metagooglebot"  name="googlebot"  class="form-control">
+	</div>
+	<div class="form-group">
+		<label for="metalanguage">language</label>
+		<input id="metalanguage"  name="language"  class="form-control">
+	</div>
+	<div class="form-group">
+		<label for="metareply-to">reply-to</label>
+		<input id="metareply-to"  name="reply-to"  class="form-control">
+	</div>
+	<div class="form-group">
+		<label for="metaweb_author">web_author</label>
+		<input id="metaweb_author"  name="web_author"  class="form-control">
+	</div>
+	<div class="form-group">
+		<label for="metaabstract">abstract</label>
+		<input id="metaabstract"  name="abstract"  class="form-control">
+	</div>
+	<div class="form-group">
+		<label for="metaauthor">author</label>
+		<input id="metaauthor"  name="author"  class="form-control">
+	</div>
+	<div class="form-group">
+		<label for="metacontact">contact</label>
+		<input id="metacontact"  name="contact"  class="form-control">
+	</div>
+	<div class="form-group">
+		<label for="metadistribution">distribution</label>
+		<input id="metadistribution"  name="distribution"  class="form-control">
+	</div>
+	<div class="form-group">
+		<label for="metaexpires">expires</label>
+		<input id="metaexpires"  name="expires"  class="form-control">
+	</div>
+	<div class="form-group">
+		<label for="metagenerator">generator</label>
+		<input id="metagenerator"  name="generator"  class="form-control">
+	</div>
+	<div class="form-group">
+		<label for="metarating">rating</label>
+		<input id="metarating"  name="rating"  class="form-control">
+	</div>
+	<div class="form-group">
+		<label for="metaslurp">slurp</label>
+		<input id="metaslurp"  name="slurp"  class="form-control">
+	</div>
+<form id="r2rDesignControls">
+</form>
+
+<button class="btn btn-block btn-outline-dark btn-lg my-4" id="addSection"><i class="fa fa-plus-circle mr-2"></i>Add Section</button>
+
+<div class="dropdown-divider"></div>
+
+<button class="btn btn-block btn-dark btn-lg my-4" id="getCode" data-toggle="modal" data-target="#codeModal"><i class="fas fa-file-code mr-2"></i>Get Code</button>
+
+
+
+				</div>
+			</div>
+		</div>
+		
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
+		<script>
+
+			//var victorica = require('victorica');
+			$(function(){
+			
+				new ClipboardJS('#copyr2ruserEmailCode');
+				new ClipboardJS('#copyr2remailCodeURL');
+				var metatagStart = '&lt;meta name="';
+				
+				$('input').keyup(function(){
+					var allinputs = '';
+					$('input').each(function(){
+					
+						if ($(this).val() != '' && $(this).attr('id') != 'r2rTitle') {
+							allinputs += '<meta name="' + $(this).attr('name') + '" content="' + $(this).val() + '">\n'
+						} else if ($(this).val() != '') {
+							allinputs += '<title>' + $(this).val() + '</title>\n'
+						}
+					});
+					$('#tagPool').val(allinputs)
+				});
+				
+			});
+		</script>
+		    
+	</body>
+</html>
+
+
+<title>relevant and attractive phrase </title>
+
+ 
+
+
+
+
